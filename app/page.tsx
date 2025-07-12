@@ -92,7 +92,7 @@ export default function MoodDiagnosisApp() {
                     color: "#ffffff",
                   }}
                 >
-                  DMMTV Pics
+                  TV Pics
                 </h1>
 
                 <p className="text-lg text-gray-300 font-medium leading-relaxed">
