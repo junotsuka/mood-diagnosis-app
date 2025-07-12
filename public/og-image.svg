@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="0.5" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="0.5" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="subtitle" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 装飾的な円 -->
+  <circle cx="1000" cy="150" r="100" fill="url(#title)" opacity="0.1"/>
+  <circle cx="150" cy="500" r="80" fill="url(#subtitle)" opacity="0.1"/>
+  
+  <!-- メインタイトル -->
+  <text x="600" y="280" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="url(#title)">
+    DMMTV Pics
+  </text>
+  
+  <!-- サブタイトル -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="url(#subtitle)">
+    気分診断で作品をレコメンド
+  </text>
+  
+  <!-- アイコン -->
+  <g transform="translate(500, 450)">
+    <!-- ハート -->
+    <path d="M0 0s-15-10-15-22.5A10.5 10.5 0 010-32.5a10.5 10.5 0 0115 10c0 12.5-15 22.5-15 22.5z" fill="url(#subtitle)" opacity="0.8"/>
+    <!-- 稲妻 -->
+    <path d="M50 0l-10-15h15l-5 15z" fill="url(#title)" opacity="0.8"/>
+    <!-- 星 -->
+    <path d="M100 0l-5-8 5-8 5 8z" fill="url(#subtitle)" opacity="0.8"/>
+  </g>
+</svg> 
