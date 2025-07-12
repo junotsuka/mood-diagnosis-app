@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     images: ["/og-image.svg"], // OGP用の画像を追加してください
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false, // 検索エンジンにインデックスされないように設定
+    follow: false, // リンクを辿らないように設定
     googleBot: {
-      index: true,
-      follow: true,
+      index: false,
+      follow: false,
       "max-video-preview": -1,
-      "max-image-preview": "large",
+      "max-image-preview": "none",
       "max-snippet": -1,
     },
   },
@@ -65,6 +65,19 @@ export default function RootLayout({
     <html lang="ja">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        {/* 追加のnoindex設定 */}
+        <meta
+          name="robots"
+          content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+        />
+        <meta
+          name="googlebot"
+          content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+        />
+        <meta
+          name="bingbot"
+          content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+        />
       </head>
       <body>{children}</body>
     </html>
